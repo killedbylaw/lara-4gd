@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace; /* Changed to a robotic font */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000; /* Dark background */
+            color: #adadad; /* Light text color */
+            background-image: url('https://wiki.leagueoflegends.com/en-us/images/thumb/Singed_Warwick_Engineering_the_Nightmare_04.png/640px-Singed_Warwick_Engineering_the_Nightmare_04.png?cf98d'); /* Added background image */
+            background-size: cover;
+            background-position: center;
+        }
+        .card {
+            background: rgba(40, 40, 40, 0.9); /* Dark card background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Adjusted shadow for dark theme */
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .card img {
+            width: 140px; /* Slightly increased width */
+            height: 140px; /* Slightly increased height */
+            border-radius: 50%;
+            margin-bottom: 0; /* Removed space below the image */
+            border: none; /* Removed the purple border */
+        }
+        .card h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .card p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #b0b0b0; /* Softer text color */
+        }
+        .card a {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #ea00ff3f; /* Darker blue for buttons */
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        .card a:hover {
+            background-color: #000000; /* Darker hover effect */
+        }
+        .skills {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .skills h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li {
+            margin: 5px 0;
+            font-size: 0.9rem;
+            color: #a0a0a0; /* Softer text color */
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #000000; /* Softer footer text color */
+        }
+        .username {
+            color: #1eff00; /* Default color for username */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <a href="" target="_blank">
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/tiles/Singed_28.jpg" alt="Your Profile Picture">
+        </a>
+        <h1 class="username">KILLEDBYLAW</h1>
+        <p>The Universe does not weep when the sun sets.</p>
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Chronically Online</li>
+                <li>Graphic Design</li>
+                <li>Writer</li>
+            </ul>
+        </div>
+        <a href="#about" target="_blank">About Me</a>
+        <a href="#portfolio" target="_blank">Portfolio</a>
+        <a href="#contact" target="_blank">Contact</a>
+        <footer>
+
+        
+    
+        </footer>
+    </div>
+</body>
+</html>
