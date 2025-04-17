@@ -27,6 +27,13 @@
             text-align: center;
             max-width: 400px;
             width: 100%;
+
+            border: 2px solid rgba(30, 255, 0, 0.5); /* Semi-transparent green border */
+            box-shadow: 0 0 15px rgba(30, 255, 0, 0.7), 0 0 30px rgba(30, 255, 0, 0.5); /* Glowing effect */
+            transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+        }
+        .card:hover {
+            box-shadow: 0 0 25px rgba(30, 255, 0, 0.9), 0 0 50px rgba(30, 255, 0, 0.7); /* Intensify glow on hover */
         }
         .card img {
             width: 140px; /* Slightly increased width */
@@ -53,6 +60,7 @@
             background-color: #ea00ff3f; /* Darker blue for buttons */
             border-radius: 5px;
             font-size: 0.9rem;
+            text-align: center; /* Center text inside buttons */
         }
         .card a:hover {
             background-color: #000000; /* Darker hover effect */
@@ -82,14 +90,48 @@
         .username {
             color: #1eff00; /* Default color for username */
         }
+       
+
+        @keyframes moveFog {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(50px, 50px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        .audio-player {
+            display: flex; /* Added to enable centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            margin: 10px auto; /* Center the element itself */
+            width: 200px; /* Small width */
+            background: rgba(40, 40, 40, 0.9); /* Match card background */
+            border: 1px solid rgba(30, 255, 0, 0.5); /* Green border */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(30, 255, 0, 0.5); /* Glowing effect */
+        }
+        .audio-player audio {
+            width: 100%;
+            height: 30px; /* Small height */
+            outline: none;
+        }
     </style>
 </head>
 <body>
+    <div id="fog"></div> <!-- Fog effect -->
     <div class="card">
-        <a href="" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/tiles/Singed_28.jpg" alt="Your Profile Picture">
-        </a>
+        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/tiles/Singed_28.jpg" alt="Your Profile Picture">
         <h1 class="username">KILLEDBYLAW</h1>
+        <div class="audio-player">
+            <audio controls>
+                <source src="https://open.spotify.com/track/7AkxKbVlqpjSGtuNT5LIuL?si=91b2677b4e584612" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
         <p>The Universe does not weep when the sun sets.</p>
         <div class="skills">
             <h2>Skills</h2>
@@ -99,13 +141,11 @@
                 <li>Writer</li>
             </ul>
         </div>
-        <a href="#about" target="_blank">About Me</a>
-        <a href="#portfolio" target="_blank">Portfolio</a>
-        <a href="#contact" target="_blank">Contact</a>
+        <a href="https://www.tumblr.com/killedbylaw" target="_blank">About Me</a> 
+        <a href="https://www.deviantart.com/xxlawrencexx" target="_blank">Portfolio</a> <!-- Link to DeviantArt -->
+        <a href="https://www.instagram.com/killedbylaw?igsh=d2hubXh5YzMxM2Nw" target="_blank">Contact</a> <!-- Link to Contact page -->
         <footer>
-
-        
-    
+            <!-- Footer content -->
         </footer>
     </div>
 </body>
